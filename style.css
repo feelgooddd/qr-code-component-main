@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --clr--white: hsl(0, 0%, 100%);
+
+  --clr-slate-300: hsl(212, 45%, 89%);
+  --clr-slate-500: hsl(216, 15%, 48%);
+  --clr-slate-900: hsl(218, 44%, 22%);
+
+  --ff-default: font-family: "Outfit", serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+
+/*html and body 100% to take up whole page and flex to center div within body */
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: var(--clr-slate-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", serif;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  text-align: center;
+  text-wrap-style: pretty;
+
+  padding: 15px;
+  background-color: var(--clr--white);
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 20px;
+
+  /* selectors for elements within flex-container only */
+  h2 {
+    line-height: 1.5rem;
+    color: var(--clr-slate-900);
+  }
+  p {
+    color: var(--clr-slate-500);
+    margin-bottom: 1rem;
+    font-size: 0.938rem;
+    line-height: 1.2rem;
+  }
+  img{
+    border-radius: 8px;
+    width: 100%;  
+  }
+}
+
